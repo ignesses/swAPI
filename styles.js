@@ -37,7 +37,6 @@ export const styles = StyleSheet.create({
     flex: 0.48,
   },
   largeButton: {
-    flex: 1,
     marginTop: 15,
   },
   buttonImage: {
@@ -61,7 +60,6 @@ export const styles = StyleSheet.create({
   },
   search: {
     margin: 20,
-    marginBottom: 20,
   },
   baseText: {
     fontWeight: "bold",
@@ -86,6 +84,6 @@ export const styles = StyleSheet.create({
     padding: 10,
     marginTop: 30,
     borderRadius: 5,
-    height: 175,
+    height: 100,
   },
 });

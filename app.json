@@ -1,24 +1,16 @@
 {
   "expo": {
-    "name": "starWarsAPI",
-    "slug": "expo.dev/@ignesses/starWarsAPI",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "name": "Star Wars",
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
+    "version": "1.0.0",
+    "slug": "star-wars-api",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.davinci.starwars",
+      "buildNumber": "1.0.0"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.davinci.starwars",
+      "versionCode": 1
     }
   }
 }

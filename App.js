@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import {
   TextInput,
   View,
@@ -13,11 +13,11 @@ import {
 import { styles } from "./styles";
 
 export default function App() {
-  const [starWarsData, setStarWarsData] = React.useState();
+  const [starWarsData, setStarWarsData] = useState();
 
-  const [searchText, setSearchText] = React.useState("");
+  const [searchText, setSearchText] = useState("");
 
-  const [stateSide, setStateSide] = React.useState(true);
+  const [stateSide, setStateSide] = useState(true);
 
   const changeSide = () => {
     setStateSide(!stateSide);
