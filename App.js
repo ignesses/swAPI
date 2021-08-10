@@ -36,7 +36,8 @@ export default function App() {
   };
 
   const imageBackDark = {
-    uri: "https://bloody-disgusting.com/wp-content/uploads/2017/04/darth.jpeg",
+    uri: "https://www.nawpic.com/media/2020/star-wars-nawpic-34-500x889.jpg",
+    //uri: "https://bloody-disgusting.com/wp-content/uploads/2017/04/darth.jpeg",
   };
 
   function search() {
@@ -55,13 +56,15 @@ export default function App() {
       .then((response) => response.json().then((data) => setStarWarsData(data)))
       .catch((error) => console.error(error));
   }
-
+  e;
   return (
     <View style={styles.container}>
       <ImageBackground
         source={stateSide ? imageBack : imageBackDark}
         resizeMode="cover"
         style={styles.imageBack}
+        // Imagen difuminada:
+        // blurRadius={1}
       >
         <TouchableOpacity
           style={styles.buttonImage}
@@ -125,7 +128,7 @@ export default function App() {
           )}
         </View>
       </ImageBackground>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
     </View>
   );
 }
