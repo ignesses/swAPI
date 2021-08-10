@@ -47,13 +47,13 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   imageLogo: {
-    flex: 1,
+    flex: 0.6,
     resizeMode: "stretch",
     marginLeft: 30,
     marginRight: 30,
   },
   imageLogo2: {
-    flex: 0.6,
+    flex: 0.86,
     resizeMode: "stretch",
     marginLeft: 30,
     marginRight: 30,

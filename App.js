@@ -40,9 +40,13 @@ export default function App() {
   };
 
   function search() {
-    fetch(`https://swapi.dev/api/people/${searchText}`)
-      .then((response) => response.json().then((data) => setStarWarsData(data)))
-      .catch((error) => console.error(error));
+    if (searchText) {
+      fetch(`https://swapi.dev/api/people/${searchText}`)
+        .then((response) =>
+          response.json().then((data) => setStarWarsData(data))
+        )
+        .catch((error) => console.error(error));
+    }
   }
 
   function searchRandom() {
@@ -61,10 +65,10 @@ export default function App() {
       >
         <TouchableOpacity
           style={styles.buttonImage}
-          //onPress={}
+          onPress={() => setStarWarsData(null)}
         >
           <Image
-            style={starWarsData ? styles.imageLogo : styles.imageLogo2}
+            style={starWarsData ? styles.imageLogo2 : styles.imageLogo}
             source={imageLogo}
           />
         </TouchableOpacity>
